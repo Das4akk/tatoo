@@ -1,0 +1,6 @@
+{
+  "name": "ATELIER BOTANICA — Premium Tattoo Studio",
+  "description": "Премиальная студия художественной татуировки. Авторские эскизы, тонкие линии, ботаника и скандинавский минимализм в атмосфере спокойствия и эстетики.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

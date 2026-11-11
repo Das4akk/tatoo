@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-base: #FBFBFA;
+    --bg-soft: #F5F4F0;
+    --bg-card: #FFFFFF;
+    --bg-sand: #EFECE6;
+    --accent-sage: #7F9A8A;
+    --accent-sage-dark: #647E6F;
+    --accent-sage-light: #EBF1ED;
+    --accent-olive: #56675C;
+    --accent-mint: #DCE7E1;
+    --text-primary: #1C201D;
+    --text-secondary: #58615A;
+    --text-muted: #838D85;
+    --border-subtle: #E8E5DD;
+    --border-accent: #D4DDD7;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #DCE7E1;
+    color: #1C201D;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Custom editorial typography utility classes */
+.font-editorial {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.text-graphite {
+  color: #1C201D;
+}
+
+.bg-milk {
+  background-color: #FBFBFA;
+}
+
+.bg-milk-soft {
+  background-color: #F5F4F0;
+}
+
+.bg-sage-tint {
+  background-color: #F0F4F2;
+}
+
+.border-delicate {
+  border-color: #E8E5DD;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
